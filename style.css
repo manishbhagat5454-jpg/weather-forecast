@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  min-height: 100vh;
+  padding: 30px;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+}
+
+.search-box button:hover {
+  background: #e68900;
+}
+
+.weather-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.main-weather {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.main-weather img {
+  width: 80px;
+}
+
+.main-weather h1 {
+  font-size: 50px;
+}
+
+#condition {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.detail-box {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.forecast-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+  gap: 20px;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.forecast-card img {
+  width: 60px;
+}
+
+.forecast-card h3 {
+  margin-bottom: 10px;
+}
+
+.forecast-card p {
+  margin-top: 5px;
+}
+
+@media(max-width: 600px) {
+
+  .search-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+}
