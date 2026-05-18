@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🌤 Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="locationInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <!-- Current Weather -->
+    <div class="weather-card" id="weatherCard">
+
+      <h2 id="cityName"></h2>
+
+      <div class="main-weather">
+        <img id="weatherIcon" src="" alt="">
+        <h1 id="temperature"></h1>
+      </div>
+
+      <p id="condition"></p>
+
+      <div class="details">
+
+        <div class="detail-box">
+          <h3>Humidity</h3>
+          <p id="humidity"></p>
+        </div>
+
+        <div class="detail-box">
+          <h3>Air Quality</h3>
+          <p id="airQuality"></p>
+        </div>
+
+        <div class="detail-box">
+          <h3>Precipitation</h3>
+          <p id="precipitation"></p>
+        </div>
+
+        <div class="detail-box">
+          <h3>Wind</h3>
+          <p id="wind"></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Forecast -->
+    <h2 class="forecast-title">6-Day Forecast</h2>
+
+    <div class="forecast-container" id="forecastContainer"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
